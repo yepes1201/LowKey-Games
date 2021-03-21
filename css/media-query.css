@@ -1,0 +1,135 @@
+@media only screen and (max-width: 1000px) {
+    /* Header */
+    section header#navbar div {
+        width: 750px;
+    }
+    /* Ganes */
+    section#games article {
+        padding: 1px 0;
+        display: block;
+    }
+    section#games article div.game-card {
+        padding: 5% 0 7%;
+    }
+    /* News */
+    section#news article {
+        height: 100%;
+        width: 75%;
+    }
+    section#news article div.email-me {
+        float: none;
+        width: 314px;
+        margin: auto auto 50px;
+    }
+    section#news article div.sm-icons {
+        border-left: none;
+        border-top: 1px solid white;
+        left: 0;
+        float: none;
+        top: 10%;
+        width: 400px;
+    }
+    section#news article div.sm-icons a i {
+        left: 30px;
+    }
+    /* Footer */
+    footer article {
+        width: 650px;
+    }
+    footer article div hr {
+        width: 240px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    /* Show Responsive Menu */
+    aside#open-btn {
+        display: block;
+    }
+    /* Header Centered */
+    section header#navbar div {
+        width: 100px;
+    }
+    section header#navbar div nav {
+        display: none;
+    }
+    /* About Us Centered */
+    section#about-us {
+        height: 575px;
+    }
+    section#about-us article {
+        width: 460px;
+    }
+    section#about-us article div.card {
+        margin: 75px 0;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    /* About Us */
+    section#about-us {
+        height: 850px;
+    }
+    section#about-us article {
+        width: 350px;
+    }
+    section#about-us article div.card {
+        margin: 250px 0;
+        text-align: center;
+        left: 0;
+        right: 0;
+        float: none;
+        width: 475px;
+    }
+    section#about-us article div.card div.card-info {
+        float: none;
+    }
+    section#about-us article div.card figure {
+        position: absolute;
+        top: -150px;
+        left: 110px;
+    }
+    /* Footer */
+    footer article {
+        width: 400px;
+    }
+    footer article div hr {
+        width: 125px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    /* Game Card */
+    section#games article {
+        padding: 0 0 50px;
+    }
+    section#games article div.game-card {
+        border: 1px solid rgba(255, 255, 255, .3);
+        border-radius: 5px;
+        margin: 30px auto;
+    }
+    /* News */
+    section#news article div.email-me h1 {
+        font-size: 1.35em;
+    }
+    section#news article div.email-me p {
+        width: 294px;
+    }
+    section#news article div.email-me input {
+        width: 280px;
+    }
+    section#news article div.sm-icons {
+        width: 285px;
+    }
+    section#news article div.sm-icons a i {
+        left: 0;
+        margin: 0 32px;
+    }
+    /* Footer */
+    footer article {
+        width: 340px;
+    }
+    footer article div hr {
+        width: 100px;
+    }
+}

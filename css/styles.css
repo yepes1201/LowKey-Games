@@ -1,0 +1,572 @@
+/* Set margin 0 to all boxes */
+
+* {
+    margin: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+
+/* Open Menu Button */
+
+aside#open-btn {
+    position: fixed;
+    z-index: 999999;
+    right: 0;
+    display: none;
+}
+
+aside#open-btn div.open-menu {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: #cecece;
+    z-index: 999999;
+    top: 25px;
+    right: 0;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #1b1b1b;
+    transition: all 0.3s ease-in;
+}
+
+aside#open-btn div.open-menu i {
+    color: black;
+    position: relative;
+    float: none;
+    font-size: 1.5em;
+    left: 9.5px;
+    top: 8px;
+}
+
+aside#open-btn a:hover div.open-menu {
+    border: 1px solid #cecece;
+    background: #1b1b1b;
+    transition: all 0.3s ease-in;
+}
+
+aside#open-btn a:hover div.open-menu i {
+    color: white;
+    transition: all 0.3s ease-in;
+}
+
+
+/* Close Menu Button */
+
+aside#close-btn {
+    position: fixed;
+    z-index: 999999;
+    right: 220px;
+    display: none;
+}
+
+aside#close-btn div.close-menu {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: #cecece;
+    z-index: 999999;
+    top: 25px;
+    right: 0;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #1b1b1b;
+    transition: all 0.3s ease-in;
+}
+
+aside#close-btn div.close-menu i {
+    color: black;
+    position: relative;
+    float: none;
+    font-size: 1.5em;
+    left: 12px;
+    top: 9px;
+}
+
+aside#close-btn a:hover div.close-menu {
+    border: 1px solid #cecece;
+    background: #1b1b1b;
+    transition: all 0.3s ease-in;
+}
+
+aside#close-btn a:hover div.close-menu i {
+    color: white;
+    transition: all 0.3s ease-in;
+}
+
+
+/* Responsive Menu */
+
+aside#responsive-menu article {
+    height: 300px;
+    position: fixed;
+    z-index: 999999;
+    width: 220px;
+    border-radius: 5px 0 0 5px;
+    background: rgba(27, 27, 27, 0.7);
+    top: 0;
+    right: -220px;
+}
+
+aside#responsive-menu article nav {
+    text-align: center;
+    display: block;
+}
+
+aside#responsive-menu article nav a {
+    display: block;
+    float: none;
+    position: relative;
+    margin: 60px 0;
+    color: white;
+    font-size: 1.25em;
+    font-family: 'Poppins';
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+
+
+/* Header */
+
+header {
+    background-color: #1b1b1b;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    box-shadow: 1px 0 5px white;
+    z-index: 999990;
+    top: 0;
+    left: 0;
+}
+
+header div {
+    width: 900px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+header div article {
+    float: left;
+    display: block;
+    width: auto;
+    height: 100px;
+}
+
+header div article a {
+    width: 100px;
+    height: 100px;
+    display: block;
+}
+
+header div article a img {
+    height: 100px;
+    transition: all .3s ease-in;
+}
+
+header div article a img:hover {
+    transform: scale(1.05);
+    transition: all .3s ease-in;
+}
+
+header div nav {
+    width: 332px;
+    float: right;
+    position: relative;
+    display: block;
+    top: 36px;
+}
+
+header div nav a {
+    text-decoration: none;
+    color: white;
+    margin: 0 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    border-bottom: 2px solid #1b1b1b;
+    padding: 0 6px 6px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.05em;
+    transition: all .3s ease-in;
+}
+
+header div nav a:hover {
+    transition: all .3s ease-in;
+    color: rgb(162, 162, 162);
+    border-bottom: 2px solid rgb(162, 162, 162);
+}
+
+
+/* Game Photo */
+
+.bg-transparent {
+    width: 100%;
+    height: 490px;
+    background-color: rgba(0, 0, 0, .6);
+    padding: 60px 0;
+}
+
+.mask {
+    background-image: url('../img/GearsBG.png');
+    height: 550px;
+    background-size: cover;
+    background-position: center;
+    display: block;
+    position: relative;
+    z-index: -1;
+}
+
+
+/* Game Photo Content */
+
+.btn {
+    position: relative;
+    width: 120px;
+    height: 40px;
+    background-color: rgb(51, 51, 51);
+    border-radius: 10px;
+    font-size: 1.25em;
+    border: none;
+    font-family: 'Poppins', san-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all .3s ease-in;
+    margin: 0 auto;
+    float: none;
+    display: block;
+    bottom: 120px;
+    border: 1px solid white;
+}
+
+.btn a {
+    color: white;
+}
+
+.btn:hover {
+    border: 1px solid white;
+    background-color: #1b1b1b;
+    transition: all .3s ease-in;
+}
+
+
+/* About Us */
+
+.left-move {
+    left: 25px;
+}
+
+section#about-us {
+    background-color: #ddd;
+    width: 100%;
+    height: 74vh;
+    display: block;
+    position: relative;
+    float: none;
+    padding: 5% 0;
+}
+
+section#about-us article {
+    width: 850px;
+    margin: 0 auto;
+    display: block;
+}
+
+section#about-us article div.card {
+    width: 500px;
+    height: 125px;
+    margin: 50px 0;
+    float: left;
+    display: block;
+    position: relative;
+}
+
+section#about-us article div.card div.card-info {
+    float: left;
+    width: 350px;
+    height: 125px;
+}
+
+section#about-us article div.card div.card-info h1 {
+    margin: 0 0 2.72%;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5em;
+    letter-spacing: .05em;
+}
+
+section#about-us article div.card div.card-info p {
+    line-height: 1.5em;
+    font-family: "Roboto", sans-serif;
+    color: #00000075;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+}
+
+section#about-us article div.card figure {
+    width: 125px;
+    height: 125px;
+    float: right;
+    display: block;
+    position: relative;
+}
+
+section#about-us article div.card figure img {
+    width: 125px;
+    border-radius: 50%;
+    height: 125px;
+}
+
+section#about-us article div.right-card {
+    float: right;
+    right: 25px;
+}
+
+section#about-us article div.right-card div.card-info {
+    float: right;
+}
+
+section#about-us article div.right-card figure {
+    float: left;
+}
+
+
+/* Games */
+
+section#games {
+    background: #636363;
+    width: 100%;
+}
+
+section#games h1.block-title {
+    text-align: center;
+    display: block;
+    position: relative;
+    padding: 7% 0 0;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    font-size: 2.5em;
+    color: white;
+}
+
+section#games article {
+    width: 90%;
+    height: auto;
+    position: relative;
+    display: flex;
+    float: none;
+    margin: 0 auto;
+}
+
+section#games article div.game-card {
+    width: 250px;
+    height: auto;
+    display: block;
+    position: relative;
+    padding: 7% 0 7%;
+    margin: 50px auto 100px;
+    border: 1px solid rgba(255, 255, 255, .3);
+    border-radius: 5px;
+}
+
+section#games article div.game-card figure {
+    width: 125px;
+    height: 250px;
+    display: block;
+    float: none;
+    margin: 0 auto;
+}
+
+section#games article div.game-card figure img {
+    width: 125px;
+    height: 125px;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.3s ease-in;
+}
+
+section#games article div.game-card figure img:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-in;
+}
+
+section#games article div.game-card figure img.card-logo {
+    width: 200px;
+    float: none;
+    position: relative;
+    height: auto;
+    border-radius: 0;
+    right: 40px;
+    top: 15px;
+}
+
+section#games article div.game-card div.nomination-box {
+    margin: 0 auto;
+    display: block;
+    float: none;
+    position: relative;
+    background: #444444;
+    width: 185px;
+    height: 125px;
+    border-radius: 20px;
+}
+
+section#games article div.game-card div.nomination-box div.nomination-info {
+    text-align: center;
+}
+
+section#games article div.game-card div.nomination-box div.nomination-info h1 {
+    padding: 10px 0 5px;
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    color: white;
+}
+
+section#games article div.game-card div.nomination-box div.nomination-info p {
+    font-family: "Roboto", sans-serif;
+    color: rgba(255, 255, 255, 0.55);
+    letter-spacing: .02em;
+    font-weight: 300;
+}
+
+
+/* Valorant Box Size */
+
+section#games article div.game-card div.valorant-box {
+    width: 220px;
+}
+
+
+/* Forza and Valorant Logo Size */
+
+section#games article div.game-card figure img.forza {
+    width: 100px;
+    left: 10px;
+}
+
+section#games article div.game-card figure img.valorant {
+    top: 40px;
+}
+
+
+/* Contact Us */
+
+section#news {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: block;
+    float: none;
+    background: #ddd;
+    padding: 7% 0;
+}
+
+section#news article {
+    width: 800px;
+    height: 100px;
+    margin: 0 auto;
+    border: 1px solid rgb(136 136 136);
+    padding: 5%;
+    border-radius: 20px;
+    background: #636363;
+}
+
+section#news article div.email-me {
+    float: left;
+    display: block;
+    position: relative;
+    top: -10px;
+}
+
+section#news article div.email-me h1 {
+    color: white;
+    font-size: 1.5em;
+    font-family: 'Poppins';
+    margin: 0 0 5px;
+}
+
+section#news article div.email-me p {
+    width: 325px;
+    margin: 0 0 15px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    color: rgba(255, 255, 255, .5);
+}
+
+section#news article div.email-me input {
+    width: 315px;
+    height: 25px;
+    border-radius: 5px;
+    border: none;
+}
+
+section#news article div.sm-icons {
+    position: relative;
+    float: right;
+    margin: 0 auto;
+    left: 60px;
+    width: 470px;
+    height: 150px;
+    border-left: 1px solid white;
+    top: -25px;
+}
+
+section#news article div.sm-icons a i {
+    font-size: 2em;
+    color: white;
+    margin: 0 40px;
+    position: relative;
+    top: 60px;
+    left: 60px;
+}
+
+
+/* Footer */
+
+footer {
+    width: 100%;
+    height: 300px;
+    display: block;
+    float: none;
+    background-color: #1c1c1c;
+}
+
+footer article {
+    width: 1000px;
+    position: relative;
+    float: none;
+    text-align: center;
+    margin: 0 auto;
+}
+
+footer article div hr {
+    width: 400px;
+    position: relative;
+    top: 149px;
+}
+
+footer article div hr.left-hr {
+    float: left;
+}
+
+footer article div img {
+    width: 125px;
+    position: relative;
+    top: 87.5px;
+}
+
+footer article div hr.right-hr {
+    float: right;
+}
+
+footer article p {
+    color: #a0a0a0;
+    font-family: 'Poppins';
+    font-weight: 400;
+    position: relative;
+    top: 87px;
+}
