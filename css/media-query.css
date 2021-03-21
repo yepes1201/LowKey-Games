@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
     /* Header */
     section header#navbar div {
         width: 750px;
@@ -41,7 +41,7 @@
     }
 }
 
-@media only screen and (max-width: 850px) {
+@media screen and (max-width: 850px) {
     /* Show Responsive Menu */
     aside#open-btn {
         display: block;
@@ -65,7 +65,7 @@
     }
 }
 
-@media only screen and (max-width: 700px) {
+@media screen and (max-width: 700px) {
     /* About Us */
     section#about-us {
         height: 850px;
@@ -98,7 +98,10 @@
     }
 }
 
-@media only screen and (max-width: 375px) {
+@media screen and (max-width: 375px) {
+    body {
+        overflow-x: hidden;
+    }
     /* Game Card */
     section#games article {
         padding: 0 0 50px;
